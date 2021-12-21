@@ -11,6 +11,7 @@ namespace UppgifterFrånPresentationer
 {
     public static class Timer
     {
+   
         public delegate void WaitDelegate();
         public static void Interval(WaitDelegate voidMethod, int loops, int waitSec)
         {
@@ -25,7 +26,5 @@ namespace UppgifterFrånPresentationer
             Console.WriteLine("Run, wait, run...............");
         }
 
-    }
-
-
+    }    
 }

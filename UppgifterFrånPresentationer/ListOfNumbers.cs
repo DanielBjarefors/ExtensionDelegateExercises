@@ -11,15 +11,15 @@ namespace UppgifterFrånPresentationer
 
         public static void Divide()
         {
-            List<int> funListNumbers = new List<int>();
-
-            Console.WriteLine("Without LINQ:");
+            List<int> funListNumbers = new List<int>();           
             for (int i= 0; i <= 30;i++)
             {
                 funListNumbers.Add(i + 1);
             }
 
             int[] numbers = funListNumbers.ToArray();
+
+            Console.WriteLine("Without LINQ:");
             foreach (var e in numbers)
             {
                 if (e%3==0||e%7==0)
@@ -34,9 +34,9 @@ namespace UppgifterFrånPresentationer
             {
                 Console.WriteLine(e);
             }
+
+
             Console.WriteLine("----------------------------------------------------");
-
         }
-
     }
 }
